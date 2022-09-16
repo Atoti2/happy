@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        cursor: pointer;
+        padding: 10px;
+        font-size: 4rem;
+        border-radius: 10px;
+        border-color: aqua;
+        box-shadow: 5px 5px 3px aqua;
+    }
+</style>
+<body>
+    <div class="container">
+        <button onclick="changeEmoji()">Are you happy? <span>😄</span></button>
+    </div>
+
+    <script>
+        function changeEmoji(){
+            var fej = document.querySelector('span').innerText
+            document.querySelector('span').innerHTML = fej == '😄' ? '😒' : '😄'
+        }
+    </script>
+
+</body>
+</html>
